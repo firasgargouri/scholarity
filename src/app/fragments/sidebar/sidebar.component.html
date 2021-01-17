@@ -1,0 +1,78 @@
+<!-- <ul class="list-group">
+  <li class="list-group-item">
+    <a [routerLink]="['student']"><strong>Student List</strong></a>
+  </li>
+  <li class="list-group-item">
+    <a [routerLink]="['student/add']"><strong>Add Student</strong></a>
+  </li>
+  <li class="list-group-item">
+    <a [routerLink]="['teacher']"><strong>Teacher List</strong></a>
+  </li>
+  <li class="list-group-item">
+    <a [routerLink]="['teacher/add']"><strong>Add Teacher</strong></a>
+  </li>
+  <li class="list-group-item">
+    <a [routerLink]="['document']"><strong>document List</strong></a>
+  </li>
+</ul> -->
+<div
+  class="sidebar"
+  data-color="orange"
+  data-background-color="white"
+  data-image="assets/img/sidebar-1.jpg"
+>
+  <div class="logo">
+    <a
+      href="https://github.com/firassios/scholarity"
+      class="simple-text logo-normal"
+    >
+      Scholarity
+    </a>
+  </div>
+  <div class="sidebar-wrapper">
+    <ul class="nav">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['']">
+          <i class="material-icons">dashboard</i>
+          <p>Dashboard</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['student']">
+          <i class="material-icons">person</i>
+          <p>Students list</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['student/add']">
+          <i class="material-icons">bubble_chart</i>
+          <p>Add student</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['teacher']">
+          <i class="material-icons">person</i>
+          <p>Teachers list</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['teacher/add']">
+          <i class="material-icons">bubble_chart</i>
+          <p>Add teacher</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['document']">
+          <i class="material-icons">content_paste</i>
+          <p>Documents</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['document/add']">
+          <i class="material-icons">content_paste</i>
+          <p>Add document</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

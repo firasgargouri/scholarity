@@ -1,0 +1,24 @@
+<!-- <div class="container">
+  <app-navbar></app-navbar>
+  <div class="row">
+    <div class="col-2">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div> -->
+<div class="wrapper">
+  <app-sidebar></app-sidebar>
+  <div class="main-panel">
+    <!-- Navbar -->
+    <app-navbar></app-navbar>
+    <!-- End Navbar -->
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+    <app-footer></app-footer>
+  </div>
+</div>

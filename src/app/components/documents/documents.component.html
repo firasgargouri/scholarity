@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header card-header-warning">
+      <h4 class="card-title">Documents List</h4>
+    </div>
+    <div class="card-body table-responsive">
+      <table class="table table-striped table-hover table-bordered">
+        <thead class="text-warning">
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Upload date</th>
+            <th>File type</th>
+            <th>File size</th>
+            <th>Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- <tr>
+            <th>11111111</th>
+            <th>Firas</th>
+            <th>Gargouri</th>
+            <th>09/05/1989</th>
+            <th>97 123 456</th>
+            <th>Maths</th>
+          </tr>
+          <tr>
+            <th>22222222</th>
+            <th>Nassim</th>
+            <th>Troudi</th>
+            <th>01/01/1995</th>
+            <th>50 111 222</th>
+            <th>Maths</th>
+          </tr> -->
+          <tr>
+            <th>Projet LL.pdf</th>
+            <th>pdf</th>
+            <th>17/01/2021</th>
+            <th>application/pdf</th>
+            <th>156159 octet</th>
+            <th>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="assets/files/Projet LL.pdf"
+                ><i class="material-icons">content_paste</i></a
+              >
+            </th>
+          </tr>
+          <tr *ngFor="let d of documents">
+            <th>{{ d.name }}</th>
+            <th>{{ d.type }}</th>
+            <th>{{ d.file.lastModified | date: "dd/MM/yyyy" }}</th>
+            <th>{{ d.file.type }}</th>
+            <th>{{ d.file.size }} octet</th>
+            <th>
+              <i class="material-icons" (click)="downloadFile(d.file)"
+                >content_paste</i
+              >
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
